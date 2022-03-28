@@ -47,11 +47,11 @@ public class movement : MonoBehaviour
             rb.velocity = newSpeed;
         }
 
-        // //stop moving when needed too
-        // if (Mathf.Abs(moveHorizontal) >= 0 && Mathf.Abs(moveVertical) >= 0)
-        // {
-        //     Debug.Log("stopeped");
-        //     rb.velocity = Vector2.Lerp(rb.velocity, Vector2.zero, 0.5f);
-        // }
+        //stop moving when needed too
+        if (Mathf.Abs(moveHorizontal) >= 0 && Mathf.Abs(moveVertical) >= 0)
+        {
+            Debug.Log("stopeped");
+            rb.velocity = Vector2.Lerp(rb.velocity, Vector2.zero, 0.5f);
+        }
     }
 }
